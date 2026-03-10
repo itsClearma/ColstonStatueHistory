@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System;
 
 public class yearDisplay : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class yearDisplay : MonoBehaviour
 
     [SerializeField] private Slider slider;
     [SerializeField] private TMP_Text textField;
-    [SerializeField] private bool showDecimalPoints;
+    [SerializeField] public int yearNumber;
 
     private void Reset()
     {
@@ -29,13 +30,8 @@ public class yearDisplay : MonoBehaviour
 
     public void HandleSliderValueChanged(float value)
     {
-        if (showDecimalPoints)
-        {
-            textField.SetText(value.ToString(format: "F2"));
-        }
-        else
-        {
-            textField.SetText(value.ToString(format: "F0"));
-        }
+        yearNumber = Convert.ToInt32(value);
+        Debug.Log("yearNumber: " + yearNumber);
+        textField.SetText(value.ToString(format: "F0"));
     }
 }
