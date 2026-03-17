@@ -19,9 +19,9 @@ public class podiumChange : MonoBehaviour
 
     //private GameObject PodiumTop;
 
-    private gameObject StatueModels;
-    private gameObject StatueFloor;
-    private gameObject StatueStand;
+    private StatueModels;
+    private StatueFloor;
+    private StatueStand;
 
     private void Reset()
     {
@@ -33,15 +33,19 @@ public class podiumChange : MonoBehaviour
     {   
         if (value >= 2020)
         {
-            transform.position = new Vector3(0.0f, 0.0f, 1.5f);
-            transform.Rotate(0, 0, 90);
+            StatueStand.SetActive(false);
+            StatueFloor.SetActive(true);
+            //ransform.position = new Vector3(0.0f, 0.0f, 1.5f);
+            //transform.Rotate(0, 0, 90);
         }
         else
         {
-            transform.position = new Vector3(0.0f, 0.8f, 1.5f);
+            StatueStand.SetActive(true);
+            StatueFloor.SetActive(false);
+            //transform.position = new Vector3(0.0f, 0.8f, 1.5f);
             //transform.Rotate(0, 0, 0);
         }
-        transform.localScale = new Vector3(0.3f, (value/5000), 0.3f);
+        //transform.localScale = new Vector3(0.3f, (value/5000), 0.3f);
     }
 
 }
