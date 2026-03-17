@@ -31,7 +31,7 @@ public class yearDisplay : MonoBehaviour
     public void HandleSliderValueChanged(float value)
     {
         yearNumber = Convert.ToInt32(value);
-        Debug.Log("yearNumber: " + yearNumber);
+        //Debug.Log("yearNumber: " + yearNumber);
         textField.SetText(value.ToString(format: "F0"));
     }
 }
