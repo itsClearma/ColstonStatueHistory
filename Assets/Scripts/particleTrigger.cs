@@ -28,10 +28,10 @@ public class particleTrigger : MonoBehaviour
     {   
         if (value == 1985 || value == 2020)
         {
-            particle.Play();
+            //particle.Play();
             Debug.Log("on");
         } else {
-            particle.Stop();
+            //particle.Stop();
             Debug.Log("off");
         }
     }
