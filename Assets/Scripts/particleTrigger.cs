@@ -5,12 +5,37 @@ using System;
 
 public class particleTrigger : MonoBehaviour
 {
-    [SerializeField] ParticleSystem particle;
+    ParticleSystem myPS;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        myPS = GetComponent<ParticleSystem>();
+    }
 
+    void startParticles(){
+        myPS.Play();
+        Debug.Log("Play()");
+    }
+
+    void stopParticles(){
+        myPS.Stop();
+        Debug.Log("Stop()");
+    }
+
+    void pauseParticles(){
+        myPS.Pause();
+        Debug.Log("Pause()");
+    }
+
+    void clearParticles(){
+        myPS.Clear();
+        Debug.Log("Clear()");
+    }
+
+    void resetParticleSystemTime(){
+        myPS.time = 0;
+        Debug.Log("Time Reset");
     }
 
     // Update is called once per frame
@@ -26,13 +51,15 @@ public class particleTrigger : MonoBehaviour
 
     public void updateParticle(float value)
     {   
-        if (value == 1985 || value == 2020)
+        if ((value == 2020) || (value == 1895))
         {
-            //particle.Play();
-            Debug.Log("on");
+            myPS.Play();
+            Invoke("startParticles", 2);
+            Debug.Log("particle on");
         } else {
-            //particle.Stop();
-            Debug.Log("off");
+            myPS.Stop();
+            myPS.Clear();
+            Debug.Log("particle off");
         }
     }
 
