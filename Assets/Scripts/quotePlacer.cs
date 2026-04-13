@@ -32,6 +32,8 @@ public class quotePlacer : MonoBehaviour
 
     public void updateQuote(float value)
     {   
+        //private string yearText;
+        //yearText = Convert.ToString(value);
         foreach (GameObject Clipping in GameObject.FindGameObjectsWithTag("Clipping"))
         {
             Destroy(Clipping);
