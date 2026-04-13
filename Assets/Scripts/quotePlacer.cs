@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
-using SimpleJSON;
+//using SimpleJSON;
 using TMPro;
 
 public class quotePlacer : MonoBehaviour
