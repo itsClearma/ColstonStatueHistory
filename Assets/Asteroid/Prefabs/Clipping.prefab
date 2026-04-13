@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7419553552940503445}
   m_Layer: 0
   m_Name: Clipping
-  m_TagString: Untagged
+  m_TagString: Clipping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,9 +25,9 @@ Transform:
   m_GameObject: {fileID: 2880220987044562784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.98753, y: 0, z: 4.71937}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7752694147614794648}
   - {fileID: 5727453353491048245}
@@ -48,27 +48,27 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -88,7 +88,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.16708994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -108,11 +108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.9069798
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.827
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -186,27 +186,27 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.16708994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -246,7 +246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.9069798
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -270,8 +270,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7731331573864860340, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_text
-      value: '"Statues are about saying ''This was a great man who did great things.''
-        That is not true, he [Colston] was a slave trader and a murderer."'
+      value: I never thought I would witness such an empowering moment that I can
+        tell my children about,
       objectReference: {fileID: 0}
     - target: {fileID: 7731331573864860340, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_margin.w
@@ -321,27 +321,27 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.16708994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -381,11 +381,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.9069798
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.29
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4017884587171816381, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -405,9 +405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7731331573864860340, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_text
-      value: 'Professor David Olusoga
-
-'
+      value: Salma Omar
       objectReference: {fileID: 0}
     - target: {fileID: 7731331573864860340, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
       propertyPath: m_fontSize

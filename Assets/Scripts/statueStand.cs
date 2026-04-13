@@ -8,7 +8,7 @@ public class statueStand : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -22,16 +22,11 @@ public class statueStand : MonoBehaviour
         if (value < 2020)
         {
             gameObject.SetActive(true);
-            //transform.position = new Vector3(0.0f, 0.0f, 1.5f);
         }
         else
         {
-            //StatueStand.SetActive(true);
-            //StatueFloor.SetActive(false);
             gameObject.SetActive(false);
-            //transform.position = new Vector3(0.0f, 0.8f, 1.5f);
         }
-        //transform.localScale = new Vector3(0.3f, (value/5000), 0.3f);
     }
 
 }
