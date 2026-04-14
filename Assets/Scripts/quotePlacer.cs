@@ -52,9 +52,9 @@ public class quotePlacer : MonoBehaviour
                 personTextComponent.text = stringPerson;
                 sourceTextComponent.text = stringSource;
 
-                Vector3 position = new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(0.5f, 2.0f), Random.Range(0.0f, 1.5f));//position of clipping
+                Vector3 position = new Vector3(Random.Range(-1.0f, 2.5f), Random.Range(0.4f, 1.5f), Random.Range(0.5f, 2.0f));//position of clipping
                 Instantiate(Clipping, position, Quaternion.identity);//place clipping prefab
             }
         }     
     }
-}
+}//x NOT 0-1.8
