@@ -53,8 +53,36 @@ public class quotePlacer : MonoBehaviour
                 sourceTextComponent.text = stringSource;
 
                 Vector3 position = new Vector3(Random.Range(-1.0f, 2.5f), Random.Range(0.4f, 2.0f), Random.Range(0.5f, 2.5f));//position of clipping
+
                 Instantiate(Clipping, position, Quaternion.identity);//place clipping prefab
+
             }
-        }     
+        }
+
+        // int check = false;
+        // while (check = false){
+
+        //     foreach (GameObject Clipping in GameObject.FindGameObjectsWithTag("Clipping")) {
+
+        //         foreach (GameObject Clipping in GameObject.FindGameObjectsWithTag("Clipping")) {//collide with each other
+        //             Debug.log(" ");
+        //             if (coins[i].intersects(coins[j]) == true) {
+        //             check = true;
+        //             }
+        //         }
+        //         if (dist(coins[i].x, coins[i].y, width / 2, width / 2) < 140) {//collide with centre
+        //             check = true;
+        //         }
+        //         }
+
+        //         if (check == true) {
+        //         check = false;
+        //         } else {
+        //         Debug.log("no collision");
+        //         }
+        //     } //repawn coins with no collision with eye or each other
+        // }
+
     }
-}//x NOT 0-1.8
+}//clipping x -1 +1
+// z 1 2
