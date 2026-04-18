@@ -20,7 +20,6 @@ public class yearDisplay : MonoBehaviour
 
     [SerializeField] private Slider slider;
     [SerializeField] private TMP_Text textField;
-    [SerializeField] public int yearNumber;
     [SerializeField] public TMP_Text yearEventField;
 
     private void Reset()
@@ -32,7 +31,6 @@ public class yearDisplay : MonoBehaviour
 
     public void HandleSliderValueChanged(float value)
     {
-        yearNumber = Convert.ToInt32(value);
         textField.SetText(value.ToString(format: "F0"));
 
         //event titles

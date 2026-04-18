@@ -19,13 +19,13 @@ public class statueFloor : MonoBehaviour
 
     public void updateFloor(float value)
     {   
-        if (value < 2020)
+        if (value >= 2020)
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
         }
         else
         {
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 

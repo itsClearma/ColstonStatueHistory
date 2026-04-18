@@ -18,8 +18,7 @@ public class quotePlacer : MonoBehaviour
     };
 
     [SerializeField] public GameObject Clipping;
-    [SerializeField] public GameObject[] ClippingInstances;
-    public int clippingCounter;
+    private string yearText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,38 +34,58 @@ public class quotePlacer : MonoBehaviour
 
     public void updateQuote(float value)
     {   
-        //private string yearText;
-        //yearText = Convert.ToString(value);
+        string yearText = value.ToString();
         foreach (GameObject Clipping in GameObject.FindGameObjectsWithTag("Clipping"))
         {
             Destroy(Clipping);
         }
-        switch(value)
+        for (int i = 0; i < quotesByYear.GetLength(0); i++)//go thru each year
         {
-            case 2020:
-                for (int i = 0; i < quotesByYear.GetLength(0); i++)
-                {
-                    if (quotesByYear[i,0] == "2020")
-                    {
-                        Vector3 position = new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(0.25f, 2.0f), Random.Range(0.0f, 1.5f));//position of clipping
-                        Instantiate(Clipping, position, Quaternion.identity);//create clipping prefab
-
-                        string stringQuote = quotesByYear[i,1];//data from 2d array
-                        string stringPerson = quotesByYear[i,2];
-                        string stringSource = quotesByYear[i,3];
-
-                        TextMeshPro quoteTextComponent = Clipping.transform.GetChild(0).GetComponent<TextMeshPro>();//gather clipping texts
-                        TextMeshPro personTextComponent = Clipping.transform.GetChild(1).GetComponent<TextMeshPro>();
-                        TextMeshPro sourceTextComponent = Clipping.transform.GetChild(2).GetComponent<TextMeshPro>();
-
-                        quoteTextComponent.text = stringQuote;
-                        personTextComponent.text = stringPerson;
-                        sourceTextComponent.text = stringSource;
-                    }
-                }
+            if (quotesByYear[i,0] == yearText)
+            {
+                string stringQuote = quotesByYear[i,1];//data from 2d array
+                string stringPerson = quotesByYear[i,2];
+                string stringSource = quotesByYear[i,3];
                 
-            break;
+                TextMeshPro quoteTextComponent = Clipping.transform.GetChild(0).GetComponent<TextMeshPro>();//gather clipping texts
+                TextMeshPro personTextComponent = Clipping.transform.GetChild(1).GetComponent<TextMeshPro>();
+                TextMeshPro sourceTextComponent = Clipping.transform.GetChild(2).GetComponent<TextMeshPro>();
+
+                quoteTextComponent.text = stringQuote;//assign data
+                personTextComponent.text = stringPerson;
+                sourceTextComponent.text = stringSource;
+
+                Vector3 position = new Vector3(Random.Range(-1.0f, 2.5f), Random.Range(0.4f, 2.0f), Random.Range(0.5f, 2.5f));//position of clipping
+
+                Instantiate(Clipping, position, Quaternion.identity);//place clipping prefab
+
+            }
         }
-       
+
+        // int check = false;
+        // while (check = false){
+
+        //     foreach (GameObject Clipping in GameObject.FindGameObjectsWithTag("Clipping")) {
+
+        //         foreach (GameObject Clipping in GameObject.FindGameObjectsWithTag("Clipping")) {//collide with each other
+        //             Debug.log(" ");
+        //             if (coins[i].intersects(coins[j]) == true) {
+        //             check = true;
+        //             }
+        //         }
+        //         if (dist(coins[i].x, coins[i].y, width / 2, width / 2) < 140) {//collide with centre
+        //             check = true;
+        //         }
+        //         }
+
+        //         if (check == true) {
+        //         check = false;
+        //         } else {
+        //         Debug.log("no collision");
+        //         }
+        //     } //repawn coins with no collision with eye or each other
+        // }
+
     }
-}
+}//clipping x -1 +1
+// z 1 2
