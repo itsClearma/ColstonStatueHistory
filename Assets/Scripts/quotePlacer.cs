@@ -7,7 +7,7 @@ using TMPro;
 public class quotePlacer : MonoBehaviour
 {
     public string[,] quotesByYear = {
-        {"1911","...the President [J.H. Howell], in proposing [a toast for] “The Pious Memory of Edward Colston,” referred to the many benefactions of the great Bristol philanthropist, who lived 200 years ago, specially mentioning the educational side of his benevolence.","University Colston Society","The British Medial Society"},
+        {"1911","...the President [J.H. Howell], in proposing [a toast for] “The Pious Memory of Edward Colston,” referred to the many benefactions of the great Bristol philanthropist, who lived 200 years ago, specially mentioning the educational side of his benevolence."," ","The British Medial Society"},
         {"1922", "[The University Colston Research Society,] Originally founded in 1899 and named in honour of the famous philanthropist, Edward Colston…", "Colston University Research Society", "Nature"},
         {"2017", "For how much longer are school children expected to commemorate Colston in the city’s cathedral whilst conveniently disregarding the memory of enslaved Africans whose lives were brutalised and cheapened by the trade in human cargo?", " ", "Bristol Radical History Group"},
         {"2018","Having statues of people who oppressed us is not a good thing to be saying to black people in this city." ,"Thangam Debbonaire", "BBC News"},

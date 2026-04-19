@@ -382,6 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32b547a56cabdc41a079b5ee82b6155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HomeScreenCanvas: {fileID: 498255715}
+  TutorialCanvas: {fileID: 1426084686}
 --- !u!114 &142654203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,12 +429,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 142654202}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: HomeScreenInterface, Assembly-CSharp
+        m_MethodName: TutorialToMainExperience
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1399,12 +1401,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1013497872}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: HomeScreenInterface, Assembly-CSharp
+        m_MethodName: HomeScreenToTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1460,6 +1462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32b547a56cabdc41a079b5ee82b6155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HomeScreenCanvas: {fileID: 498255715}
+  TutorialCanvas: {fileID: 1426084686}
 --- !u!1 &1022788262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,7 +1873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1426084687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2801,5 +2805,5 @@ SceneRoots:
   - {fileID: 1967115495}
   - {fileID: 1074500975}
   - {fileID: 1022788265}
-  - {fileID: 498255720}
   - {fileID: 1426084691}
+  - {fileID: 498255720}
