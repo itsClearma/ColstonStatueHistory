@@ -39,6 +39,9 @@ public class yearDisplay : MonoBehaviour
             case (1895):
                 yearEventField.SetText("The statue of Edward Colston is installed");
             break;
+            case (1899):
+                yearEventField.SetText("The University College Colston Society is founded in the University of Bristol");
+            break;
             case (2020):
                 yearEventField.SetText("BLM protestors pull down and deface the statue.");
             break;
