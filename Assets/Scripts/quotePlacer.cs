@@ -61,7 +61,9 @@ public class quotePlacer : MonoBehaviour
 
                 Vector3 position = new Vector3(Random.Range(-1.0f, 2.5f), Random.Range(0.4f, 2.0f), Random.Range(0.5f, 2.5f));//position of clipping
 
-                Instantiate(Clipping, position, Quaternion.identity);//place clipping prefab
+                GameObject newClipping =  Instantiate(Clipping, position, Quaternion.identity);//place clipping prefab
+              
+
 
             }
         }

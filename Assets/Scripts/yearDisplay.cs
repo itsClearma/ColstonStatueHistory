@@ -19,7 +19,7 @@ public class yearDisplay : MonoBehaviour
     }
 
     [SerializeField] private Slider slider;
-    [SerializeField] private TMP_Text textField;
+    [SerializeField] public TMP_Text textField;
     [SerializeField] public TMP_Text yearEventField;
 
     private void Reset()
