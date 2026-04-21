@@ -5,27 +5,32 @@ using System;
 
 public class statueStand : MonoBehaviour
 {
+    private float PreFabYearStat;
+    public GameObject uprightStatue;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameObject.SetActive(true);
+        PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        uprightStatue.SetActive(true);
+        Debug.Log("statue stand code is active, preFabYear is: "+PreFabYearStat);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
     }
 
-    public void updateStand(float value)
+    public void updateStand(float PreFabYearStat)
     {   
-        if (value < 2020)
+        if (PreFabYearStat < 2020)
         {
-            gameObject.SetActive(true);
+            uprightStatue.SetActive(true);
         }
         else
         {
-            gameObject.SetActive(false);
+            uprightStatue.SetActive(false);
         }
     }
 
