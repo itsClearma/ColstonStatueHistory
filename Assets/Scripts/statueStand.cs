@@ -20,10 +20,6 @@ public class statueStand : MonoBehaviour
     void Update()
     {
         PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
-    }
-
-    public void updateStand(float PreFabYearStat)
-    {   
         if (PreFabYearStat < 2020)
         {
             uprightStatue.SetActive(true);
@@ -32,6 +28,12 @@ public class statueStand : MonoBehaviour
         {
             uprightStatue.SetActive(false);
         }
+
+    }
+
+    public void updateStand(float PreFabYearStat)
+    {   
+        
     }
 
 }
