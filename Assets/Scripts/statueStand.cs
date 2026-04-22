@@ -11,7 +11,7 @@ public class statueStand : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        //PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
         uprightStatue.SetActive(true);
         Debug.Log("statue stand code is active, preFabYear is: "+PreFabYearStat);
     }
@@ -19,7 +19,15 @@ public class statueStand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        //PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        
+
+    }
+
+    public void updateStand(float value)
+    {   
+        PreFabYearStat = value;
+        
         if (PreFabYearStat < 2020)
         {
             uprightStatue.SetActive(true);
@@ -28,12 +36,6 @@ public class statueStand : MonoBehaviour
         {
             uprightStatue.SetActive(false);
         }
-
-    }
-
-    public void updateStand(float PreFabYearStat)
-    {   
-        
     }
 
 }

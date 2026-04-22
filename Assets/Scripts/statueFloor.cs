@@ -11,7 +11,7 @@ public class statueFloor : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        //PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
         fallenStatue.SetActive(false);
         Debug.Log("statue floor code is inactive, preFabYear is: "+PreFabYearStat);
     }
@@ -19,7 +19,15 @@ public class statueFloor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        //PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
+        
+
+    }
+
+    public void updateFloor(float value)
+    {   
+        PreFabYearStat = value;
+
         if (PreFabYearStat >= 2020)
         {
             fallenStatue.SetActive(true);
@@ -30,12 +38,6 @@ public class statueFloor : MonoBehaviour
             fallenStatue.SetActive(false);
             Debug.Log("statue floor code is inactive, preFabYear is: "+PreFabYearStat);
         }
-
-    }
-
-    public void updateFloor(float PreFabYearStat)
-    {   
-        
     }
 
 }
