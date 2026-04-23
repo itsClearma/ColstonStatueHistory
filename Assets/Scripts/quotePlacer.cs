@@ -7,17 +7,18 @@ using TMPro;
 public class quotePlacer : MonoBehaviour
 {
     public string[,] quotesByYear = {
-        {"1911","...the President [J.H. Howell], in proposing [a toast for] “The Pious Memory of Edward Colston,” referred to the many benefactions of the great Bristol philanthropist, who lived 200 years ago, specially mentioning the educational side of his benevolence."," ","The British Medial Society"},
+        {"1911", "...the President [J.H. Howell], in proposing [a toast for] “The Pious Memory of Edward Colston,” referred to the many benefactions of the great Bristol philanthropist, who lived 200 years ago, specially mentioning the educational side of his benevolence.", " ", "The British Medial Society"},
         {"1922", "[The University Colston Research Society,] Originally founded in 1899 and named in honour of the famous philanthropist, Edward Colston…", "Colston University Research Society", "Nature"},
         {"1925", "[Bristol should] recall her heritage and rise to a true 'Commemoration' on November 13th in each year of the noble galaxy of benefactors and worthies of 'The Metropolis of the West.'", "H J Wilkins", "J.W. Arrowsmith Ltd"},
+        {"1964", "The name of Edward Colston, the great seventeenth-century philanthropist and educationalist, is associated in Bristol with a number of scholastic and charitable institutions.", "R S W Clarke", "Econometric analysis for the national economic planning"},
         {"2017", "For how much longer are school children expected to commemorate Colston in the city’s cathedral whilst conveniently disregarding the memory of enslaved Africans whose lives were brutalised and cheapened by the trade in human cargo?", " ", "Bristol Radical History Group"},
-        {"2018","Having statues of people who oppressed us is not a good thing to be saying to black people in this city." ,"Thangam Debbonaire", "BBC News"},
-        {"2020","Statues are about saying 'This was a great man who did great things.' That is not true, he [Colston] was a slave trader and a murderer." ,"Professor David Olusoga", "BBC News"},
+        {"2018", "Having statues of people who oppressed us is not a good thing to be saying to black people in this city.", "Thangam Debbonaire", "BBC News"},
+        {"2020", "Statues are about saying 'This was a great man who did great things.' That is not true, he [Colston] was a slave trader and a murderer.", "Professor David Olusoga", "BBC News"},
         {"2020", "it's part of a history that shouldn't be glorified", "Keziah Wenham-Kenyon", "BBC News"},
         {"2020", "I never thought I would witness such an empowering moment that I can tell my children about,", "Salma Omar", "BBC News"},
         {"2021", "...statues are a symbol of how seriously our cities in Britain are actually taking these issues.", "Dr Shawn Sobers", "BBC News"},
         {"2021", "The future of the statue must be decided by the people of Bristol and so I urge everyone to take the opportunity to share their views.", "Marvin Rees", "BBC News"},
-        {"2023", "Edward Colston’s career as a merchant was far darker than many children in his home city of Bristol were taught.","JR Sidhu", "The Clueless Conscience"},
+        {"2023", "Edward Colston’s career as a merchant was far darker than many children in his home city of Bristol were taught.", "JR Sidhu", "The Clueless Conscience"},
         {"2025", "This has led, by default, to a defence of his position as the ‘great Bristol philanthropist’ whilst ignoring the immense human suffering he and others of his class propagated for profit.", "Roger Ball", "Bristol Radical History Group"},
 
     };
@@ -60,7 +61,7 @@ public class quotePlacer : MonoBehaviour
                 personTextComponent.text = stringPerson;
                 sourceTextComponent.text = stringSource;
 
-                Vector3 position = new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(0.2f, 1.0f), Random.Range(1.5f, 3.0f));//position of clipping
+                Vector3 position = new Vector3(Random.Range(-1.25f, 1.25f), Random.Range(0.2f, 1.0f), Random.Range(1.5f, 3.0f));//position of clipping
 
                 GameObject newClipping =  Instantiate(Clipping, position, Quaternion.identity);//place clipping prefab
               
