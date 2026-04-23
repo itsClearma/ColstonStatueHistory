@@ -12,7 +12,7 @@ public class statueFloor : MonoBehaviour
     void Start()
     {
         //PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
-        fallenStatue.SetActive(false);
+        fallenStatue.SetActive(true);
         Debug.Log("statue floor code is inactive, preFabYear is: "+PreFabYearStat);
     }
 

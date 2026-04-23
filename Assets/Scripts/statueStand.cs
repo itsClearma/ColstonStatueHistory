@@ -12,8 +12,8 @@ public class statueStand : MonoBehaviour
     void Start()
     {
         //PreFabYearStat = GetComponentInParent<podiumTopScript>().getPreFabYear();
-        uprightStatue.SetActive(true);
-        Debug.Log("statue stand code is active, preFabYear is: "+PreFabYearStat);
+        uprightStatue.SetActive(false);
+        //Debug.Log("statue stand code is active, preFabYear is: "+PreFabYearStat);
     }
 
     // Update is called once per frame
